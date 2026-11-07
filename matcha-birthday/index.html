@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f3e9">
+  <meta name="description" content="A little matcha birthday surprise for Ais.">
+  <title>A Little Matcha Gift For You ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fredoka:wght@400;500;600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="sparkle sparkle-one" aria-hidden="true">✦</div>
+  <div class="sparkle sparkle-two" aria-hidden="true">✧</div>
+  <div class="leaf leaf-one" aria-hidden="true">❧</div>
+  <div class="leaf leaf-two" aria-hidden="true">❧</div>
+
+  <main class="app-shell">
+    <div class="topline">
+      <span class="brand-mark"><span class="brand-dot"></span> matcha moments</span>
+      <button class="music-toggle" id="music-toggle" type="button" aria-label="Putar atau jeda musik" title="Musik">
+        <span id="music-icon">♫</span><span id="music-label">music off</span>
+      </button>
+    </div>
+
+    <section class="screen active" id="password-screen" aria-labelledby="password-title">
+      <div class="card gate-card">
+        <div class="mini-sticker">a tiny secret 🍵</div>
+        <div class="gift-illustration" aria-hidden="true">
+          <div class="gift-box"><span>♡</span></div>
+          <div class="gift-bow"></div>
+          <span class="gift-spark s1">✦</span><span class="gift-spark s2">✧</span>
+        </div>
+        <p class="eyebrow">just for someone special</p>
+        <h1 id="password-title">Psst... a little<br><em>secret for you</em></h1>
+        <p class="subcopy">Kapan hari special kamu?</p>
+        <form id="password-form" class="password-form">
+          <label class="sr-only" for="password-input">Masukkan kode tanggal lahir kamu</label>
+          <input id="password-input" type="text" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="ketik kodenya..." aria-describedby="password-feedback">
+          <p class="feedback" id="password-feedback" role="status"></p>
+          <button class="button button-primary full-button" type="submit">UNLOCK MY GIFT <span>♡</span></button>
+        </form>
+        <p class="tiny-note">a little green, a little love.</p>
+      </div>
+    </section>
+
+    <section class="screen" id="welcome-screen" aria-labelledby="welcome-title">
+      <div class="card welcome-card">
+        <div class="welcome-top"><span class="pill">a birthday mini adventure</span><span class="tiny-flower">✿</span></div>
+        <div class="matcha-cup" aria-hidden="true">
+          <div class="cup-steam">〰</div>
+          <div class="cup-lid"></div><div class="cup-body"><span>抹茶</span></div><div class="cup-handle"></div>
+          <div class="cup-heart">♡</div>
+        </div>
+        <p class="eyebrow">your little surprise is ready</p>
+        <h1 id="welcome-title">Yayyy, you're<br><em>here!</em> ♡</h1>
+        <p class="subcopy">A little birthday surprise, made just for you.</p>
+        <p class="body-copy">Made with a little matcha, a little love, and lots of thoughts about you.</p>
+        <button class="button button-primary full-button" id="start-gift" type="button">OPEN YOUR GIFT <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="screen" id="flowers-screen" aria-labelledby="flowers-title">
+      <div class="screen-content">
+        <div class="section-heading">
+          <p class="eyebrow">little things, just for you</p>
+          <h1 id="flowers-title">Three little<br><em>flowers</em> for you</h1>
+          <p class="subcopy">Tap each flower to reveal a little message.</p>
+        </div>
+        <div class="flower-row" id="flower-row">
+          <button class="flower-button flower-one" type="button" data-flower="0" aria-label="Buka bunga pertama">
+            <span class="flower-art"><svg viewBox="0 0 100 120" aria-hidden="true"><path class="stem" d="M50 55 Q45 80 52 111"/><path class="leaf-shape" d="M49 87 Q20 75 24 94 Q37 104 49 87"/><g class="petals"><ellipse cx="50" cy="25" rx="12" ry="19"/><ellipse cx="50" cy="25" rx="12" ry="19" transform="rotate(60 50 43)"/><ellipse cx="50" cy="25" rx="12" ry="19" transform="rotate(120 50 43)"/><ellipse cx="50" cy="25" rx="12" ry="19" transform="rotate(180 50 43)"/><ellipse cx="50" cy="25" rx="12" ry="19" transform="rotate(240 50 43)"/><ellipse cx="50" cy="25" rx="12" ry="19" transform="rotate(300 50 43)"/></g><circle class="flower-center" cx="50" cy="43" r="10"/></svg></span>
+            <span class="flower-label">little wish</span><span class="flower-check">✓</span>
+          </button>
+          <button class="flower-button flower-two" type="button" data-flower="1" aria-label="Buka bunga kedua">
+            <span class="flower-art"><svg viewBox="0 0 100 120" aria-hidden="true"><path class="stem" d="M50 55 Q60 80 49 111"/><path class="leaf-shape" d="M53 89 Q79 70 78 91 Q66 103 53 89"/><g class="petals"><ellipse cx="50" cy="25" rx="13" ry="20"/><ellipse cx="50" cy="25" rx="13" ry="20" transform="rotate(72 50 43)"/><ellipse cx="50" cy="25" rx="13" ry="20" transform="rotate(144 50 43)"/><ellipse cx="50" cy="25" rx="13" ry="20" transform="rotate(216 50 43)"/><ellipse cx="50" cy="25" rx="13" ry="20" transform="rotate(288 50 43)"/></g><circle class="flower-center" cx="50" cy="43" r="10"/></svg></span>
+            <span class="flower-label">reminder</span><span class="flower-check">✓</span>
+          </button>
+          <button class="flower-button flower-three" type="button" data-flower="2" aria-label="Buka bunga ketiga">
+            <span class="flower-art"><svg viewBox="0 0 100 120" aria-hidden="true"><path class="stem" d="M50 55 Q42 82 52 111"/><path class="leaf-shape" d="M47 92 Q19 83 25 101 Q38 108 47 92"/><g class="petals"><ellipse cx="50" cy="25" rx="10" ry="20"/><ellipse cx="50" cy="25" rx="10" ry="20" transform="rotate(45 50 43)"/><ellipse cx="50" cy="25" rx="10" ry="20" transform="rotate(90 50 43)"/><ellipse cx="50" cy="25" rx="10" ry="20" transform="rotate(135 50 43)"/><ellipse cx="50" cy="25" rx="10" ry="20" transform="rotate(180 50 43)"/><ellipse cx="50" cy="25" rx="10" ry="20" transform="rotate(225 50 43)"/><ellipse cx="50" cy="25" rx="10" ry="20" transform="rotate(270 50 43)"/><ellipse cx="50" cy="25" rx="10" ry="20" transform="rotate(315 50 43)"/></g><circle class="flower-center" cx="50" cy="43" r="9"/></svg></span>
+            <span class="flower-label">one more thing</span><span class="flower-check">✓</span>
+          </button>
+        </div>
+        <div class="progress-wrap"><div class="progress-track"><span id="flower-progress"></span></div><p id="flower-count">0 / 3 flowers opened</p></div>
+        <button class="button button-primary full-button" id="continue-flowers" type="button" disabled>CONTINUE TO THE NEXT SURPRISE <span>→</span></button>
+        <p class="tiny-note">take your time, no rush ♡</p>
+      </div>
+    </section>
+
+    <section class="screen" id="seblak-screen" aria-labelledby="seblak-title">
+      <div class="card question-card">
+        <div class="question-illustration" aria-hidden="true"><span class="bowl">♨</span><span class="chili">🌶</span></div>
+        <p class="eyebrow">question no. 01</p>
+        <h1 id="seblak-title">Janji sama gw nggak mau makan seblak lagi ya! 😤</h1>
+        <p class="subcopy">Choose wisely, missy... 👀</p>
+        <div class="choice-stack">
+          <button class="button button-primary full-button" id="seblak-yes" type="button">A · Iya deh... ♡</button>
+          <button class="button button-soft full-button" id="seblak-no" type="button">B · Gak mau ah!</button>
+        </div>
+        <p class="tiny-note">psst... this is just a silly joke, okay? 🍵</p>
+      </div>
+    </section>
+
+    <section class="screen" id="forgiveness-screen" aria-labelledby="forgiveness-title">
+      <div class="card question-card">
+        <div class="letter-stamp" aria-hidden="true">♡</div>
+        <p class="eyebrow">question no. 02</p>
+        <h1 id="forgiveness-title">Kalo mau lanjut, lu maafin gw dulu ya! 🥺</h1>
+        <p class="subcopy">I brought a little apology with me.</p>
+        <div class="choice-stack">
+          <button class="button button-primary full-button" id="forgive-yes" type="button">A · Iya, aku maafin kok, ganteng ♡</button>
+          <button class="button button-soft full-button" id="forgive-no" type="button">B · Gak aku maafin, ganteng 🐶</button>
+        </div>
+        <p class="tiny-note">your feelings are always allowed, okay? ♡</p>
+      </div>
+    </section>
+
+    <section class="screen" id="letter-screen" aria-labelledby="letter-heading">
+      <div class="screen-content letter-screen-content">
+        <div class="section-heading letter-heading">
+          <p class="eyebrow">a little note from me</p>
+          <h1 id="letter-heading">One last thing<br><em>for you</em> ♡</h1>
+          <p class="subcopy" id="letter-instruction">Tap the envelope to open your letter.</p>
+        </div>
+        <button class="envelope-button" id="open-letter" type="button" aria-label="Buka surat ulang tahun">
+          <span class="envelope-back"></span><span class="envelope-paper"><span>for Ais ♡</span></span><span class="envelope-flap"></span><span class="envelope-seal">♡</span>
+        </button>
+        <p class="tiny-note" id="envelope-caption">sealed with a little matcha magic</p>
+        <article class="letter-paper hidden" id="letter-paper" aria-label="Surat ulang tahun">
+          <div class="letter-paper-top"><span>dear Ais,</span><span>♡</span></div>
+          <div class="letter-text" id="letter-text"></div>
+          <div class="letter-controls">
+            <button class="text-button" id="show-all-letter" type="button">show all text ↓</button>
+            <button class="button button-primary" id="finish-letter" type="button" disabled>FINISH READING ♡</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="screen" id="final-screen" aria-labelledby="final-title">
+      <div class="card final-card">
+        <div class="final-flower" aria-hidden="true">✿</div>
+        <p class="eyebrow">and that's my little surprise</p>
+        <h1 id="final-title">Happy Birthday,<br><em>Ais</em> ♡</h1>
+        <div class="final-divider"><span>✦</span><span>♡</span><span>✦</span></div>
+        <p class="final-quote">May your heart always find reasons to smile.<br>May your days be filled with kindness.<br>And may this little gift remind you that you deserve beautiful things, today and always.</p>
+        <p class="final-matcha">Made with love, a little matcha, and a lot of thought. 🍵</p>
+        <p class="signature">For My Friend,<br><strong>Aiss.syh ♡</strong></p>
+        <p class="from-line">— Faiz ♡</p>
+        <button class="button button-primary full-button" id="play-again" type="button">PLAY AGAIN <span>↻</span></button>
+      </div>
+      <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="message-modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Tutup pesan">×</button>
+      <div class="modal-flower" aria-hidden="true">✿</div>
+      <p class="eyebrow">a tiny message for you</p>
+      <h2 id="modal-title">A Little Wish ♡</h2>
+      <p id="modal-message"></p>
+      <button class="button button-primary full-button" id="modal-done" type="button">AWWW, THANK YOU ♡</button>
+    </div>
+  </div>
+
+  <div class="toast-backdrop" id="reaction-backdrop" hidden>
+    <div class="reaction-card" role="dialog" aria-modal="true" aria-labelledby="reaction-title">
+      <div class="reaction-face" aria-hidden="true">🥹</div>
+      <h2 id="reaction-title">LAH KOK GITU?! 😭</h2>
+      <p id="reaction-message">Baru juga mulai, udah melawan aja, nona satu ini.</p>
+      <button class="button button-primary full-button" id="reaction-close" type="button">ULANGI JAWABAN 😤</button>
+    </div>
+  </div>
+
+  <audio id="background-music" src="assets/TULUS-Teh-SnapYT.App.webm" preload="none" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
